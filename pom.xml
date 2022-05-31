@@ -12,7 +12,21 @@
     <packaging>jar</packaging>
 
     <name>TestJob</name>
-
+        
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.7.0</version>
+            <configuration>
+                <release>10</release>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+        
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
